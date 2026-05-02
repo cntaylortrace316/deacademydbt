@@ -1,3 +1,6 @@
+version: 2
+
+
 models:
   - name: employee
     description: "Employee DBT model"
@@ -29,7 +32,11 @@ models:
   - name: final_orders
     description: "DBT model for the finale orders model"
   - name: session
-    description: :DBT Model for the session table"
+    description: "DBT Model for the session table"
+  - name: concat_name
+    description: "DBT Model for the concat name"
+  - name: concat_address
+    description: "DBT Model for the concat address"
 sources:
   - name: employee
     database: DBT_DB
@@ -71,4 +78,3 @@ sources:
     schema: PUBLIC
     tables:
       - name: SESSION_SRC
-
