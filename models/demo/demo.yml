@@ -6,14 +6,18 @@ models:
     description: "Employee DBT model"
     columns:
       - name: emp_id
-        data_tests: 
+        data_tests:
           - unique
           - not_null
           - accepted_values:
-              arguments: 
+              arguments:
                 values: ['1','2','3','4','5']
-                config: 
+                config:
                   severity: warn
+      - name: emp_salary
+        data_tests:
+          - salary_check    
+
 
 
 
